@@ -1,14 +1,16 @@
-# For the Players
+# BATTLECITY
 
 ## Preface
 
-This is the accompanying README file for Ethan Mislang and Louise Vilar's implementation of the game "Battle City". It makes use of the Pyxel, a retro game engine for python. 
+An arcade-based multidirectional tank shooter video game inspired by the *"Battle City" developed by Namco (1985).
+
+This game is developed by Louise Gabriel Vilar and Ethan Mislang as a submission for the CS12 Machine Problem 1 (MP1). It makes use of the Pyxel, a retro game engine for python. 
 
 The specifications can be found in this Notion page https://dcs-jfmcoronel.notion.site/CS-12-23-2-MP-1-Battle-City-d1943f0e39f64c678de4188c7a676936#497739a636b14c59a403d0e8df1a59db .
 
 A video demonstration of the final game is in this Google Drive folder: https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link
 
-Note: the highest phase that we have attained is **PHASE 3** (Completed all requirements)
+*Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)
 
 ## Controls
 

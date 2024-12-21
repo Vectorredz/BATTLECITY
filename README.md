@@ -27,26 +27,26 @@ python main.py
 
 #### Player Tank
 
-- W:   Move up one cell
-- A:    Move left one cell
-- S:    Move down one cell
-- D:   Move right one cell
+- ```W```:   Move up one cell
+- ```A```:    Move left one cell
+- ```S```:    Move down one cell
+- ```D```:   Move right one cell
 
-- SPACEBAR: Shoot bullets
-- SPACEBAR (Hold): Shoot bullets for fastest allowed rate of fire
-- SPACEBAR (REPEAT): Shoot bullets in succession for fastest allowed rate of fire
+- ```SPACEBAR```: Shoot bullets
+- ```SPACEBAR``` (Hold): Shoot bullets for fastest allowed rate of fire
+- ```SPACEBAR``` (REPEAT): Shoot bullets in succession for fastest allowed rate of fire
 
 #### Game
 
-- CTRL / Control    : Reset game
-- Esc / Escape       : Stops the program (analogous to quit game) 
-- Enter / Return     : Starts the game (if on the title screen), respawns the player (if already in game)
+- ```CTRL``` or ```Control```    : Reset game
+- ```Esc``` or ```Escape```       : Stops the program (analogous to quit game) 
+- ```Enter``` or ```Return```     : Starts the game (if on the title screen), respawns the player (if already in game)
 
 #### Cheat code
 
 This implementation contains a cheat code. Typing the string 
 ```
-"OSTEP"
+OSTEP
 ```
 at any point will give the player one (1) life.
 

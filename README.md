@@ -17,7 +17,7 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 
 ## Controls
 
-### Player Tank
+#### Player Tank
 
 - W:   Move up one cell
 - A:    Move left one cell
@@ -28,23 +28,25 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 - SPACEBAR (Hold): Shoot bullets for fastest allowed rate of fire
 - SPACEBAR (REPEAT): Shoot bullets in succession for fastest allowed rate of fire
 
-### Game
+#### Game
 
 - CTRL / Control    : Reset game
 - Esc / Escape       : Stops the program (analogous to quit game) 
 - Enter / Return     : Starts the game (if on the title screen), respawns the player (if already in game)
 
-### Cheat code
+#### Cheat code
 
-This implementation contains a cheat code. Typing the string "OSTEP" at any point will give the player one (1) life.
+This implementation contains a cheat code. Typing the string '''"OSTEP"''' at any point will give the player one (1) life.
 
 ## Gameplay
 
 The objective of the game is to kill all **Enemy Tanks** within the alloted time of 2-minute per **Stages**. There are designated spawn points for enemies in the map, and the spawners cannot be killed. There is also a **Home Cell**, wherein if it is destroyed, the game is immediately over for the player regardless of **Token** and **Lives** left. 
 
+(`<br>`)
+
 # Code Explanation
 
-## Environment 
+### Environment 
 Environment helps for the current display and transition of the game. Includes the following:
 ```
 # Environment Variables
@@ -55,11 +57,11 @@ SCENE_GAMEOVER = 2
 SCENE_VICTORY = 3
 ```
 
-### Pyxelgrid
+#### Pyxelgrid
 
 Most entities in the game go through Pyxelgrid, aside from the **PlayerBullets**, **EnemyBullets**, **EnemyLandmine** and other assets.
 
-### Customization
+#### Customization
 
 They map layout of each stage is specified in their own respective text file. The acronyms are as follows:
 
@@ -82,51 +84,51 @@ They map layout of each stage is specified in their own respective text file. Th
 17. "TR" - Trees
 18. "DO" - Door
 
-### Caveats
+#### Caveats
 There are a few requirements for the game to run properly. There must be at least one enemy in the map at initialization, there can only be one spawner, and there can only be one player tank.
 
 ## Player Tank
 As the player, you control a blue-colored tank. 
 
-- ### Bullets
+- #### Bullets
    Pressing **[SPACEBAR]** allows the **Player Tank** to shoot **PlayerBullets**. Such **PlayerBullets** travels around 4 C/s (Cell per second)
 
-- ### Lives
+- #### Lives
    The player tank has give (1) **Lives** for each insertion of **Token** at the start of the game. 
 
-- ### Tokens
+- #### Tokens
    By default, player is given (2) **Token** that can be used to respawn whenever **PlayerTank** dies from **EnemyBullets** or **EnemyLandmine**
 
 ## Enemy Tanks
 
 Each **Stage** has respective number of enemy presence in the map. The following are the (2) Two types of Enemy Tanks.
 
-- ### Regular Enemy Tank
+- #### Regular Enemy Tank
     **RegularEnemyTank** are the counterpart of the **PlayerTank**. They are simple AI-controlled that moves and shoots **EnemyBullet** randomly at a given frame.  **PlayerTank** are neither allowed to pass through the **EnemyTanks** nor be damaged when adjacent to them.
 
-- ### Landmine Tank
+- #### Landmine Tank
     Similar to **RegularEnemyTank**, **LandmineTank** are hostile **EnemyTank** but rather than firing **EnemyBullets**, these tanks plant **EnemyLandmine** on their position
 
 ## Stages
 
-- ### Stage 1: Normal Map
+- #### Stage 1: Normal Map
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
-- ### Stage 2: Maze Map 
+- #### Stage 2: Maze Map 
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
-- ### Stage 3: CS 12 Map 
+- #### Stage 3: CS 12 Map 
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
 
 ## Sound Design
    The following are the sounds designed by *Ethan Mislang* using Pyxel Editor
 
-- ### Bullet Firing 
-- ### Bullet Explosion
-- ### Enemy Tank Destruction
-- ### Gameover and Gameend
-- ### Stage Transition
+- #### Bullet Firing 
+- #### Bullet Explosion
+- #### Enemy Tank Destruction
+- #### Gameover and Gameend
+- #### Stage Transition
 
 ## Sprites and Visual Designs
    The sprites and assets are designed by *Louise Vilar* using Pyxel Editor. 

@@ -1,7 +1,7 @@
 # BATTLECITY
 
 ## Preview 
-https://github.com/user-attachments/assets/ecc92935-a9a3-4193-b1e9-1c7e713bceeb
+https://github.com/user-attachments/assets/preview
 ## Preface
 
 An arcade-based multidirectional tank shooter video game inspired by the *"Battle City" developed by Namco (1985).

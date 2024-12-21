@@ -15,6 +15,12 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 
 *Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)*
 
+## How to Run
+
+To run the game, please install Python and Pyxel first and run the following commands:
+
+```python main.py```
+
 ## Controls
 
 #### Player Tank
@@ -36,7 +42,7 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 
 #### Cheat code
 
-This implementation contains a cheat code. Typing the string ```"OSTEP" at any point will give the player one (1) life.
+This implementation contains a cheat code. Typing the string ```"OSTEP"``` at any point will give the player one (1) life.
 
 ## Gameplay
 

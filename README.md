@@ -9,9 +9,9 @@ An arcade-based multidirectional tank shooter video game inspired by the *"Battl
 
 This game is developed by Louise Gabriel Vilar and Ethan Mislang as a submission for the CS12 Machine Problem 1 (MP1). It makes use of the Pyxel, a retro game engine for python. 
 
-The specifications can be found in this Notion page https://dcs-jfmcoronel.notion.site/CS-12-23-2-MP-1-Battle-City-d1943f0e39f64c678de4188c7a676936#497739a636b14c59a403d0e8df1a59db .
+The specifications can be found in this Notion page [Specs](dcs-jfmcoronel.notion.site/CS-12-23-2-MP-1-Battle-City-d1943f0e39f64c678de4188c7a67693)
 
-A video demonstration of the final game is in this Google Drive folder: https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link
+A video demonstration of the final game is in this Google Drive folder: [Video Demo](https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link)
 
 *Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)*
 
@@ -178,13 +178,13 @@ With each member unwavering effort and hardwork, Battle(C)ity is made possible. 
 - EnemyTank and LandmineTank
 - Video Presentation
 - Readme.md Formatting
-...
 
 **VILAR, Louise Gabiel R.**
 - Pyxel Resources (Sprites, Text, Map Design)
 - Environment and PyxelGrid Integration
 - PlayerTank
 - Miscellenaous Features (Timer)
+- Bullet Collision & Mirror Detection
 - Gamestate Setting
+- Cheatcode
 - Readme.md Formatting
-...

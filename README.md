@@ -19,7 +19,9 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 
 To run the game, please install Python and Pyxel first and run the following commands:
 
-```python main.py```
+```
+python main.py
+```
 
 ## Controls
 
@@ -42,13 +44,15 @@ To run the game, please install Python and Pyxel first and run the following com
 
 #### Cheat code
 
-This implementation contains a cheat code. Typing the string ```"OSTEP"``` at any point will give the player one (1) life.
+This implementation contains a cheat code. Typing the string 
+```
+"OSTEP"
+```
+at any point will give the player one (1) life.
 
 ## Gameplay
 
 The objective of the game is to kill all **Enemy Tanks** within the alloted time of 2-minute per **Stages**. There are designated spawn points for enemies in the map, and the spawners cannot be killed. There is also a **Home Cell**, wherein if it is destroyed, the game is immediately over for the player regardless of **Token** and **Lives** left. 
-
-(`<br>`)
 
 ## Code Explanation
 

@@ -1,5 +1,7 @@
 # BATTLECITY
 
+## Preview 
+https://github.com/user-attachments/assets/ecc92935-a9a3-4193-b1e9-1c7e713bceeb
 ## Preface
 
 An arcade-based multidirectional tank shooter video game inspired by the *"Battle City" developed by Namco (1985).
@@ -10,7 +12,7 @@ The specifications can be found in this Notion page https://dcs-jfmcoronel.notio
 
 A video demonstration of the final game is in this Google Drive folder: https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link
 
-*Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)
+*Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)*
 
 ## Controls
 

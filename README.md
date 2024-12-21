@@ -1,45 +1,62 @@
-# For the Players
+# BATTLECITY
+
+## Preview 
+[https://github.com/user-attachments/assets/preview](https://github.com/user-attachments/assets/46b58a37-853c-46a6-b8f2-1268954fd79b)
 
 ## Preface
 
-This is the accompanying README file for Ethan Mislang and Louise Vilar's implementation of the game "Battle City". It makes use of the Pyxel, a retro game engine for python. 
+An arcade-based multidirectional tank shooter video game inspired by the *"Battle City" developed by Namco (1985).
 
-The specifications can be found in this Notion page https://dcs-jfmcoronel.notion.site/CS-12-23-2-MP-1-Battle-City-d1943f0e39f64c678de4188c7a676936#497739a636b14c59a403d0e8df1a59db .
+This game is developed by Louise Gabriel Vilar and Ethan Mislang as a submission for the CS12 Machine Problem 1 (MP1). It makes use of the Pyxel, a retro game engine for python. 
 
-A video demonstration of the final game is in this Google Drive folder: https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link
+The specifications can be found in this Notion page [Specs](dcs-jfmcoronel.notion.site/CS-12-23-2-MP-1-Battle-City-d1943f0e39f64c678de4188c7a67693)
 
-Note: the highest phase that we have attained is **PHASE 3** (Completed all requirements)
+A video demonstration of the final game is in this Google Drive folder: [Video Demo](https://drive.google.com/drive/folders/1OGGjnLBiuvdtYAI87eXH27piuByuIPmH?usp=drive_link)
+
+*Note: the phases that the group was able to achieved are **PHASE 1 - PHASE 3** (Completed all requirements)*
+
+## How to Run
+
+To run the game, please install Python and Pyxel first and run the following commands:
+
+```
+python main.py
+```
 
 ## Controls
 
-### Player Tank
+#### Player Tank
 
-- W:   Move up one cell
-- A:    Move left one cell
-- S:    Move down one cell
-- D:   Move right one cell
+- ```W```:   Move up one cell
+- ```A```:    Move left one cell
+- ```S```:    Move down one cell
+- ```D```:   Move right one cell
 
-- SPACEBAR: Shoot bullets
-- SPACEBAR (Hold): Shoot bullets for fastest allowed rate of fire
-- SPACEBAR (REPEAT): Shoot bullets in succession for fastest allowed rate of fire
+- ```SPACEBAR```: Shoot bullets
+- ```SPACEBAR``` (Hold): Shoot bullets for fastest allowed rate of fire
+- ```SPACEBAR``` (REPEAT): Shoot bullets in succession for fastest allowed rate of fire
 
-### Game
+#### Game
 
-- CTRL / Control    : Reset game
-- Esc / Escape       : Stops the program (analogous to quit game) 
-- Enter / Return     : Starts the game (if on the title screen), respawns the player (if already in game)
+- ```CTRL``` or ```Control```    : Reset game
+- ```Esc``` or ```Escape```       : Stops the program (analogous to quit game) 
+- ```Enter``` or ```Return```     : Starts the game (if on the title screen), respawns the player (if already in game)
 
-### Cheat code
+#### Cheat code
 
-This implementation contains a cheat code. Typing the string "OSTEP" at any point will give the player one (1) life.
+This implementation contains a cheat code. Typing the string 
+```
+OSTEP
+```
+at any point will give the player one (1) life.
 
 ## Gameplay
 
 The objective of the game is to kill all **Enemy Tanks** within the alloted time of 2-minute per **Stages**. There are designated spawn points for enemies in the map, and the spawners cannot be killed. There is also a **Home Cell**, wherein if it is destroyed, the game is immediately over for the player regardless of **Token** and **Lives** left. 
 
-# Code Explanation
+## Code Explanation
 
-## Environment 
+#### Environment 
 Environment helps for the current display and transition of the game. Includes the following:
 ```
 # Environment Variables
@@ -50,11 +67,11 @@ SCENE_GAMEOVER = 2
 SCENE_VICTORY = 3
 ```
 
-### Pyxelgrid
+#### Pyxelgrid
 
 Most entities in the game go through Pyxelgrid, aside from the **PlayerBullets**, **EnemyBullets**, **EnemyLandmine** and other assets.
 
-### Customization
+#### Customization
 
 They map layout of each stage is specified in their own respective text file. The acronyms are as follows:
 
@@ -77,59 +94,59 @@ They map layout of each stage is specified in their own respective text file. Th
 17. "TR" - Trees
 18. "DO" - Door
 
-### Caveats
+#### Caveats
 There are a few requirements for the game to run properly. There must be at least one enemy in the map at initialization, there can only be one spawner, and there can only be one player tank.
 
-## Player Tank
+### Player Tank
 As the player, you control a blue-colored tank. 
 
-- ### Bullets
+- #### Bullets
    Pressing **[SPACEBAR]** allows the **Player Tank** to shoot **PlayerBullets**. Such **PlayerBullets** travels around 4 C/s (Cell per second)
 
-- ### Lives
+- #### Lives
    The player tank has give (1) **Lives** for each insertion of **Token** at the start of the game. 
 
-- ### Tokens
+- #### Tokens
    By default, player is given (2) **Token** that can be used to respawn whenever **PlayerTank** dies from **EnemyBullets** or **EnemyLandmine**
 
-## Enemy Tanks
+### Enemy Tanks
 
 Each **Stage** has respective number of enemy presence in the map. The following are the (2) Two types of Enemy Tanks.
 
-- ### Regular Enemy Tank
+- #### Regular Enemy Tank
     **RegularEnemyTank** are the counterpart of the **PlayerTank**. They are simple AI-controlled that moves and shoots **EnemyBullet** randomly at a given frame.  **PlayerTank** are neither allowed to pass through the **EnemyTanks** nor be damaged when adjacent to them.
 
-- ### Landmine Tank
+- #### Landmine Tank
     Similar to **RegularEnemyTank**, **LandmineTank** are hostile **EnemyTank** but rather than firing **EnemyBullets**, these tanks plant **EnemyLandmine** on their position
 
-## Stages
+### Stages
 
-- ### Stage 1: Normal Map
+- #### Stage 1: Normal Map
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
-- ### Stage 2: Maze Map 
+- #### Stage 2: Maze Map 
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
-- ### Stage 3: CS 12 Map 
+- #### Stage 3: CS 12 Map 
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
 
-## Sound Design
+### Sound Design
    The following are the sounds designed by *Ethan Mislang* using Pyxel Editor
 
-- ### Bullet Firing 
-- ### Bullet Explosion
-- ### Enemy Tank Destruction
-- ### Gameover and Gameend
-- ### Stage Transition
+- #### Bullet Firing 
+- #### Bullet Explosion
+- #### Enemy Tank Destruction
+- #### Gameover and Gameend
+- #### Stage Transition
 
-## Sprites and Visual Designs
+### Sprites and Visual Designs
    The sprites and assets are designed by *Louise Vilar* using Pyxel Editor. 
 ```
 resources.pyxres
 ```
 
-## GameState
+### GameState
 ```
 class GameState:
     player_lives: int
@@ -147,9 +164,9 @@ class GameState:
 ```
 GameState, being a dataclass allows us to stack several in-game settings to control the current state of the game.
 
-## Miscellaneous Features
+### Miscellaneous Features
 
-- ### Timer
+- #### Timer
 
    Upon inserting a **Token** into the game, **Timer** of 2-minutes immediately starts. There are 2-minute alloted time for each **Stage**. When the **PlayerTank** is either **Dead** or the player pressed **Pause** the **Timer** stops and blinks to signal the player with the current time. When player pressed Enter/Return **Timer** will immediately **Resume** with the time it left off.
 
@@ -157,12 +174,12 @@ GameState, being a dataclass allows us to stack several in-game settings to cont
 
    If the timer runs out for each **Stage** the game immediately ends with **GameOver** even if the player still have **Lives** or **Token** left.
 
-- ### Heads-Up Display (HUD)
+- #### Heads-Up Display (HUD)
 
    In **SCENE_PLAY**, players are guided and updated with sidebar that contains the basic **HUD** for **Lives**, **Timer**, **EnemyCount**, and **Token**. 
 
 
-# CONTRIBUTIONS 
+## CONTRIBUTIONS 
 
 With each member unwavering effort and hardwork, Battle(C)ity is made possible. Herewith are the following contributions of members:
 
@@ -173,13 +190,13 @@ With each member unwavering effort and hardwork, Battle(C)ity is made possible. 
 - EnemyTank and LandmineTank
 - Video Presentation
 - Readme.md Formatting
-...
 
 **VILAR, Louise Gabiel R.**
 - Pyxel Resources (Sprites, Text, Map Design)
 - Environment and PyxelGrid Integration
 - PlayerTank
 - Miscellenaous Features (Timer)
+- Bullet Collision & Mirror Detection
 - Gamestate Setting
+- Cheatcode
 - Readme.md Formatting
-...

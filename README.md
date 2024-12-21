@@ -36,7 +36,7 @@ A video demonstration of the final game is in this Google Drive folder: [Video D
 
 #### Cheat code
 
-This implementation contains a cheat code. Typing the string '''"OSTEP"''' at any point will give the player one (1) life.
+This implementation contains a cheat code. Typing the string ```"OSTEP" at any point will give the player one (1) life.
 
 ## Gameplay
 
@@ -44,9 +44,9 @@ The objective of the game is to kill all **Enemy Tanks** within the alloted time
 
 (`<br>`)
 
-# Code Explanation
+## Code Explanation
 
-### Environment 
+#### Environment 
 Environment helps for the current display and transition of the game. Includes the following:
 ```
 # Environment Variables
@@ -87,7 +87,7 @@ They map layout of each stage is specified in their own respective text file. Th
 #### Caveats
 There are a few requirements for the game to run properly. There must be at least one enemy in the map at initialization, there can only be one spawner, and there can only be one player tank.
 
-## Player Tank
+### Player Tank
 As the player, you control a blue-colored tank. 
 
 - #### Bullets
@@ -99,7 +99,7 @@ As the player, you control a blue-colored tank.
 - #### Tokens
    By default, player is given (2) **Token** that can be used to respawn whenever **PlayerTank** dies from **EnemyBullets** or **EnemyLandmine**
 
-## Enemy Tanks
+### Enemy Tanks
 
 Each **Stage** has respective number of enemy presence in the map. The following are the (2) Two types of Enemy Tanks.
 
@@ -109,7 +109,7 @@ Each **Stage** has respective number of enemy presence in the map. The following
 - #### Landmine Tank
     Similar to **RegularEnemyTank**, **LandmineTank** are hostile **EnemyTank** but rather than firing **EnemyBullets**, these tanks plant **EnemyLandmine** on their position
 
-## Stages
+### Stages
 
 - #### Stage 1: Normal Map
    - Features all required cells in phase 3
@@ -121,7 +121,7 @@ Each **Stage** has respective number of enemy presence in the map. The following
    - Features all required cells in phase 3
    - Added other assets like doors, grass, and trees
 
-## Sound Design
+### Sound Design
    The following are the sounds designed by *Ethan Mislang* using Pyxel Editor
 
 - #### Bullet Firing 
@@ -130,13 +130,13 @@ Each **Stage** has respective number of enemy presence in the map. The following
 - #### Gameover and Gameend
 - #### Stage Transition
 
-## Sprites and Visual Designs
+### Sprites and Visual Designs
    The sprites and assets are designed by *Louise Vilar* using Pyxel Editor. 
 ```
 resources.pyxres
 ```
 
-## GameState
+### GameState
 ```
 class GameState:
     player_lives: int
@@ -154,9 +154,9 @@ class GameState:
 ```
 GameState, being a dataclass allows us to stack several in-game settings to control the current state of the game.
 
-## Miscellaneous Features
+### Miscellaneous Features
 
-- ### Timer
+- #### Timer
 
    Upon inserting a **Token** into the game, **Timer** of 2-minutes immediately starts. There are 2-minute alloted time for each **Stage**. When the **PlayerTank** is either **Dead** or the player pressed **Pause** the **Timer** stops and blinks to signal the player with the current time. When player pressed Enter/Return **Timer** will immediately **Resume** with the time it left off.
 
@@ -164,12 +164,12 @@ GameState, being a dataclass allows us to stack several in-game settings to cont
 
    If the timer runs out for each **Stage** the game immediately ends with **GameOver** even if the player still have **Lives** or **Token** left.
 
-- ### Heads-Up Display (HUD)
+- #### Heads-Up Display (HUD)
 
    In **SCENE_PLAY**, players are guided and updated with sidebar that contains the basic **HUD** for **Lives**, **Timer**, **EnemyCount**, and **Token**. 
 
 
-# CONTRIBUTIONS 
+## CONTRIBUTIONS 
 
 With each member unwavering effort and hardwork, Battle(C)ity is made possible. Herewith are the following contributions of members:
 
